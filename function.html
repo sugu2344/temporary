@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h2>ROCK PAPER SCISSORS</h2>
+    <button onclick="rock()">ROCK</button>
+    <button onclick="paper()">PAPER</button>
+    <button onclick="scissors()">SCISSORS</button>
+
+    <script>
+      // .......................rock.........
+      function rock() {
+        stone();
+        let result = "";
+
+        if (computerMove === "ROCK") {
+          result = "YOU Tie";
+        } else if (computerMove === "PAPER") {
+          result = "YOU LOSE";
+        } else if (computerMove === "SCISSORS") {
+          result = "YOU WIN";
+        }
+        alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+      }
+      // rock();
+      // .................paper............
+      function paper() {
+     
+
+        var result = "";
+
+        if (computerMove === "ROCK") {
+          result= "YOU Win";
+        } else if (computerMove === "PAPER") {
+          result = "YOU Tie";
+        } else if (computerMove === "SCISSORS") {
+          result = "YOU LOSE";
+        }
+        alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+      }
+
+      //   //.................scissors............
+      function scissors() {
+
+        
+
+        let result="";
+
+       
+          if(computerMove==="ROCK"){
+            result="YOU WIN";
+          }
+          else if(computerMove==="PAPER"){
+            result="YOU LOSE";
+          }
+          else if(computerMove==="SCISSORS"){
+            result="YOU WIN";
+          }
+          alert(`You picked scissor. Computer picked ${computerMove}. ${result}`);
+        }
+        // ..............simplify........
+       
+
+        let computerMove="";
+        function stone(){
+            const randomNumber = Math.random();
+        
+
+        if(randomNumber>=0&&randomNumber<1/3){
+            computerMove="ROCK";
+        }
+
+        else if(randomNumber>=1/3&&randomNumber<2/3){
+            computerMove="PAPER";
+        }
+
+        else if (computerMove="SCISSORS"){
+
+        }
+        return computerMove ;
+        
+        }
+
+    </script>
+  </body>
+</html>
